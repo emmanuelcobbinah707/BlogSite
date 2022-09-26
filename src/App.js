@@ -56,7 +56,7 @@ function App() {
         blogPosts = {blogPosts}
         setBlogPosts = {setBlogPosts} 
         />
-        <hr/>
+        {/* <hr/> */}
         <Blog
         blogPosts = {blogPosts}
         setBlogPosts = {setBlogPosts}
