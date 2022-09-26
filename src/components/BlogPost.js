@@ -12,8 +12,8 @@ const BlogPost = ({ date, blogPost, blogPosts, setBlogPosts, title, content, id 
             <span>{date}</span>
         </li>
         <li><p>{content}</p></li>
-        <button onClick={deleteHandler}>
-             <i className = 'fas fa-trash'></i>
+        <button  className = "delete" onClick={deleteHandler}>
+             <i className = 'fas fa-trash'></i> <p>Remove</p>
         </button>
     </div>
   )
