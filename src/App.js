@@ -5,6 +5,8 @@ import Blog from './components/Blog.js'
 
 function App() {
 
+   const [title, setTitle] = useState("");
+   const [content, setContent] = useState("");
    const [blogPosts, setBlogPosts] = useState([]);
 
   //Saving Progress
@@ -53,6 +55,10 @@ function App() {
     <div className='App'>
       <header>
         <Header 
+        title = {title}
+        setTitle = {setTitle}
+        content = {content}
+        setContent = {setContent}
         blogPosts = {blogPosts}
         setBlogPosts = {setBlogPosts} 
         />

@@ -23,6 +23,7 @@
 }
 
 .header h1{
+  font-size: 1.8em;
   margin-left: 20px;
   padding: 5px;
 }
@@ -32,7 +33,7 @@ button {
   background-color: #f4f4f4;
   border-radius: 10px;
   padding: 8px 10px;
-  font-size: 15px;
+  font-size: 1em;
   cursor: pointer;
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -42,7 +43,7 @@ button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
   background-color: #0bda08; 
   color: white;
-  font-size: 17px;
+  font-size: 1em;
   transition: 0.4s;
 }
 
@@ -50,14 +51,8 @@ li {
   list-style: none;
 }
 
-hr {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 20px;
-}
-
 .profilePic {
-  width: 100px;
+  width: 80px;
   height: auto;
   border-radius: 50%;
 }
@@ -65,22 +60,23 @@ hr {
 #form {
   margin-top: 20px;
   margin-left: 12%;
-  font-size: 20px;
+  font-size: 1em;
   /* text-align: center;*/
   /* justify-content: center; */
 }
 
 #form label {
+  font-size: 20px;
   margin-top: 50px;
   /* padding: 5px; */
 }
 
 #form input {
-  font-size: 25px;
+  font-size: 20px;
   border: none;
   border-radius: 20px;
   background-color: #f4f4f4;
-  height: 50px;
+  height: 45px;
   width: 50%;
   padding: 10px;
 }
@@ -95,16 +91,16 @@ hr {
   background-color: #f4f4f4;
 }
 
-.title-input {
+#title-input {
 margin-bottom: 5px; 
 }
 
 #form button {
   background-color: #0bda08; 
   color: white;
-  margin-top: 15px;
+  margin-top: 18px;
   margin-left: 20%;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   width: 50%;
 }
@@ -119,8 +115,8 @@ margin-bottom: 5px;
 }
 
 .blogContainer {
-  width: 64%;
-  margin-left: 16%;
+  width: 66%;
+  margin-left: 17%;
 }
 
 .blogpost{
@@ -131,11 +127,42 @@ margin-bottom: 5px;
 }
 
 .blogpost h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .blogpost p {
   /* width: 90%;
   margin-left: 5%; */
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.buttons {
+  margin-left: 50%;
+ /*  display: flex;
+  align-items: flex-end; */
+}
+
+.delete, .edit {
+  align-items: center;
+  margin-top: 25px;
+  font-size: 18px;
+  width: 120px;
+}
+
+.delete p, .edit p {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.delete:hover {
+  background-color: #d11a2a;
+  transition: 0.4s;
+  width: 150px;
+}
+
+.edit:hover {
+  background-color: #0bda08;
+  transition: 0.4s;
+  width: 170px;
 }
