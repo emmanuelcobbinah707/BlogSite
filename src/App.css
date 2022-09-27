@@ -58,20 +58,23 @@ li {
 }
 
 #form {
-  margin-top: 20px;
   margin-left: 12%;
+}
+
+form {
+  margin-top: 20px;
   font-size: 1em;
   /* text-align: center;*/
   /* justify-content: center; */
 }
 
-#form label {
+form label {
   font-size: 20px;
   margin-top: 50px;
   /* padding: 5px; */
 }
 
-#form input {
+form input {
   font-size: 20px;
   border: none;
   border-radius: 20px;
@@ -95,7 +98,7 @@ li {
 margin-bottom: 5px; 
 }
 
-#form button {
+form button {
   background-color: #0bda08; 
   color: white;
   margin-top: 18px;
@@ -105,7 +108,7 @@ margin-bottom: 5px;
   width: 50%;
 }
 
-#form button:hover {
+form button:hover {
   color: black;
   background-color: #f4f4f4;
 }
@@ -146,11 +149,12 @@ margin-bottom: 5px;
   align-items: center;
   margin-top: 25px;
   font-size: 18px;
-  width: 120px;
+  width: 150px;
 }
 
 .delete p, .edit p {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
   display: inline-block;
   margin-left: 10%;
 }
@@ -158,7 +162,7 @@ margin-bottom: 5px;
 .delete:hover {
   background-color: #d11a2a;
   transition: 0.4s;
-  width: 150px;
+  width: 170px;
 }
 
 .edit:hover {

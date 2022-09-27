@@ -3,10 +3,8 @@ import JohnDoe from './johndoe.jpeg'
 
 
 
-const Header = ({ blogPosts, setBlogPosts }) => {
+const Header = ({ title, setTitle, content, setContent, blogPosts, setBlogPosts }) => {
 
-   const [title, setTitle] = useState("");
-   const [content, setContent] = useState("");
    const [date, setDate] = useState("");
 
     //Hiding the Create Blog Form
@@ -59,7 +57,9 @@ const Header = ({ blogPosts, setBlogPosts }) => {
         } else {
             setBlogPosts([
                 ...blogPosts, {title: title, content: content, date: date, id: Math.round(Math.random() * 1000)}
+                
             ]);
+            unHide();
         }
     }
 

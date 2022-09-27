@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogPost from './BlogPost.js'
 
-const Blog = ({ blogPosts, setBlogPosts }) => {
+const Blog = ({ title, setTitle, content, setContent, blogPosts, setBlogPosts }) => {
   return (
     <div>
         <div className='blogContainer'>
