@@ -13,7 +13,7 @@ const BlogPost = ({
     }
 
     const unHide = () => {
-        const editForm = document.querySelector('#editForm');
+        const editForm = document.querySelector('.editForm');
         editForm.classList.toggle('hide');
     }
 
@@ -38,7 +38,7 @@ const BlogPost = ({
         </button>
        </div>
 
-       <div className='hide editForm' >
+       <div className='editForm hide' >
             <form>
                 <label>Title</label>
                 <br/>

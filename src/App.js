@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header.js';
 import Blog from './components/Blog.js'
+import Footer from './components/Footer.js'
 
 function App() {
 
@@ -15,41 +16,24 @@ function App() {
     }
 
    //Retrieve blogPosts
-   const getBlogPosts = () => {
-    if (localStorage.getItem('blogPosts') === null ) {
-      localStorage.setItem('blogPosts', JSON.stringify([]));
+    const getBlogPosts = () => {
+   let getttIt = localStorage.getItem('blogPosts');
+    let localBlogPosts = JSON.parse(getttIt);
+    setBlogPosts(localBlogPosts);
+
+    if (localStorage.getItem(blogPosts) === null) {
+        localStorage.setItem(blogPosts, JSON.stringify([]));
+    } else {
+         let localBlogPosts = JSON.parse(localStorage.getItem('blogPosts'));
+         console.log(localBlogPosts); 
     }
-
-    let blogParsed = JSON.parse(localStorage.getItem('blogPosts'))
-
-
-
-      // let getIt = localStorage.getItem('blogPosts');
-      // let localBlogPosts = JSON.parse(getIt);
-
-      // console.log(localBlogPosts)
-
-  //   let getttIt = localStorage.getItem('blogPosts');
-  //   let localBlogPosts = JSON.parse(getttIt);
-  //   setBlogPosts(localBlogPosts);
-
-    // if (localStorage.getItem(blogPosts) === null) {
-    //   // localStorage.setItem(blogPosts, JSON.stringify([]));
-    //   console.log('yay');
-    // } else {
-    //   // let localBlogPosts = JSON.parse(localStorage.getItem('blogPosts'));
-    //   // console.log(localBlogPosts);
-    //   console.log('nay');
-    // }
-   }
+    }
 
    useEffect(() => {
     saveBlogPosts();
    }, [blogPosts])
 
-   useEffect(() => {
-    getBlogPosts();
-   }, [])
+   useEffect(getBlogPosts(), [])
 
   return(
     <div className='App'>
@@ -68,6 +52,7 @@ function App() {
         setBlogPosts = {setBlogPosts}
         /> 
       </header>
+      <Footer />
     </div>
   )
 }
